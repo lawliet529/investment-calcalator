@@ -2,11 +2,11 @@ import UserInputType from "../model/UserInputType";
 import { calculateInvestmentResults, formatter } from "../util/investment";
 
 function Results({ input }: { input: UserInputType }) {
-  const resultsData = calculateInvestmentResults(input);
-
   if (!(input.duration > 0)) {
     return <p>Please enter a duration greater than 0.</p>;
   }
+  
+  const resultsData = calculateInvestmentResults(input);
   return (
     <table id="result">
       <thead>
