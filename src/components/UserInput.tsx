@@ -2,7 +2,7 @@ import UserInputType from "../model/UserInputType";
 
 function UserInput({
   userInput,
-  onChange: onChange,
+  onChange,
 }: {
   userInput: UserInputType;
   onChange: (inputIndentifier: string, newValue: number) => void;
