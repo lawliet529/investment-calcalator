@@ -17,7 +17,6 @@ function Results({ input }: { input: UserInputType }) {
           <th>Total Interest</th>
           <th>Invested Capital</th>
         </tr>
-        2
       </thead>
       <tbody>
         {resultsData.map((yearData) => {
